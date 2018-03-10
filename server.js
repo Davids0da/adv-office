@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-var port = process.env.PORT || 8200
+var port = process.env.PORT || 5001
 app.listen(port, function () {
   console.log('Listening on port ' + port + '!')
 });
