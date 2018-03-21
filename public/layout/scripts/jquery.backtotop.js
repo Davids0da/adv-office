@@ -24,8 +24,8 @@ $(".box1").hover(
     function () {
         $('.img-1').addClass("hide");
         $('.img-1-blue').removeClass("hide");
-    }, 
-    function () { 
+    },
+    function () {
         $('.img-1').removeClass("hide");
         $('.img-1-blue').addClass("hide");
     }
@@ -34,8 +34,8 @@ $(".box2").hover(
     function () {
         $('.img-2').addClass("hide");
         $('.img-2-blue').removeClass("hide");
-    }, 
-    function () { 
+    },
+    function () {
         $('.img-2').removeClass("hide");
         $('.img-2-blue').addClass("hide");
     }
@@ -44,8 +44,8 @@ $(".box3").hover(
     function () {
         $('.img-3').addClass("hide");
         $('.img-3-blue').removeClass("hide");
-    }, 
-    function () { 
+    },
+    function () {
         $('.img-3').removeClass("hide");
         $('.img-3-blue').addClass("hide");
     }
@@ -54,9 +54,21 @@ $(".box4").hover(
     function () {
         $('.img-4').addClass("hide");
         $('.img-4-blue').removeClass("hide");
-    }, 
-    function () { 
+    },
+    function () {
         $('.img-4').removeClass("hide");
         $('.img-4-blue').addClass("hide");
     }
 );
+
+
+$('#sample').fadeOut(3000, function () {
+    $("#preloader").addClass('fade-out');
+    $('#sample').fadeIn(600, function () {
+        $("#preloader").addClass('hide');
+    });
+    $("body, html").removeClass("scroll-off");
+});
+$('#sample2').fadeOut(3000, function () {
+    $(".text-over").addClass('heading2');
+});

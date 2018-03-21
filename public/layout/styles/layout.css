@@ -31,6 +31,8 @@ File: Layout CSS
 #topbar i{margin:0 5px 0 0; line-height:normal;}
 
 
+
+
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
 #header{}
@@ -445,13 +447,27 @@ table a, #comments a{background-color:inherit;}
 	.font-x3{font-size:1.6rem;}
 }
 
-.heading { 
+.heading2 { 
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
          -o-animation: fadein 3s; /* Opera < 12.1 */
 			animation: fadein 3s, moveto 1s;
 			
+}
+.fade-out { 
+	-webkit-animation: fadeout 0.7s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeout 0.7s; /* Firefox < 16 */
+	 -ms-animation: fadeout 0.7s; /* Internet Explorer */
+	  -o-animation: fadeout 0.7s; /* Opera < 12.1 */
+		 animation: fadeout 0.7s;
+}
+.fade-out-2 { 
+	-webkit-animation: fadeout 1s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeout 1s; /* Firefox < 16 */
+	 -ms-animation: fadeout 1s; /* Internet Explorer */
+	  -o-animation: fadeout 1s; /* Opera < 12.1 */
+		 animation: fadeout 1s;
 }
 @keyframes moveto {
 	from { margin-top: -70px }
@@ -484,4 +500,146 @@ table a, #comments a{background-color:inherit;}
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+  
+  .section-preloader {
+	padding: 20px;
+  }
+  
+  .section-border {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 92vh;
+	position: relative;
+  }
+  
+  .svg-farnosova {
+	width: 100vh;
+  }
+  
+  .logo-letters {
+	animation: letter-opacity 3s ease-in;
+	-webkit-animation: letter-opacity 3s ease-in;
+  }
+  
+  .pre-hr {
+	position: absolute;
+	background-color: #D3B889;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+  }
+  
+  .pre-hr_top {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	-webkit-animation-name: draw-line__width;
+	animation-name: draw-line__width;
+  }
+  
+  .pre-hr_bottom {
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 2px;
+	-webkit-animation-name: draw-line__width;
+	animation-name: draw-line__width;
+  }
+  
+  .pre-hr_left {
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	-webkit-animation-name: draw-line__height;
+	animation-name: draw-line__height;
+  }
+  
+  .pre-hr_right {
+	bottom: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	-webkit-animation-name: draw-line__height;
+	animation-name: draw-line__height;
+  }
+  
+  @keyframes draw-line__width {
+	0% {
+	  width: 0;
+	}
+	100% {
+	  width: 100%;
+	}
+  }
+  @keyframes draw-line__height {
+	0% {
+	  height: 0;
+	}
+	100% {
+	  height: 100%;
+	}
+  }
+  @keyframes letter-opacity {
+	0% {
+	  opacity: 0;
+	}
+	70% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  #preloader { 
+	  width: 100%;
+	  height: 100%;
+	  z-index: 1001;
+	  background-color: white !important;
+	  position: absolute;
+  }
+
+.scroll-off { 
+    margin: 0 !important; height: 100% !important; overflow: hidden !important;
+}
+#logo2 { 
+	width: 350px;
+	position: absolute;
+	margin: auto;
+	margin-top: -200px;
 }
