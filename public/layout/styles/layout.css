@@ -23,7 +23,8 @@ File: Layout CSS
 
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
-#topbar{padding:15px 0; font-size:.8rem; text-transform:uppercase;}
+#topbar{padding:15px 0;
+	 font-size:.8rem;}
 
 #topbar *{margin:0;}
 #topbar ul li{display:inline-block; margin-right:10px; padding-right:15px; border-right:1px solid;}
@@ -140,6 +141,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 /* Top Navigation */
 #mainav{}
+#mainav li a {padding-left: 20px !important; padding-right: 20px !important;}
 #mainav ul.clear{margin-top:3px;}
 #mainav ul{text-transform:uppercase;}
 #mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
