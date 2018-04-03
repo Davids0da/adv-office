@@ -72,3 +72,5 @@ $('#sample').fadeOut(3000, function () {
 $('#sample2').fadeOut(3000, function () {
     $(".text-over").addClass('heading2');
 });
+
+

@@ -1,7 +1,7 @@
 {
-  "name": "BelgradeLawOffice",
+  "name": "belgrade-law-office",
   "version": "1.0.0",
-  "description": "BelgradeLawOffice",
+  "description": "belgrade-law-office",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,7 +19,13 @@
   "homepage": "https://github.com/Davids0da/adv-office.git",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "express": "^4.14.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^1.0.0",
+    "express": "^4.16.3",
+    "express-ejs-layouts": "^2.4.0",
+    "express-helpers": "^1.3.2",
+    "i18n": "^0.8.3",
+    "i18n-express": "^1.1.3",
     "jquery": "^3.1.1"
   },
   "devDependencies": {}
