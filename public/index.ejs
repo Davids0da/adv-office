@@ -71,11 +71,13 @@
           </ul>
         </div>
         <div class="fl_right">
+          <a href="/en">
           <img style="width: 25px;" src="images/demo/backgrounds/en.png">
-          <a class="locale<%= getLocale() === 'srb' ? ' active' : '' %>" data-locale="srb" id="francuski" href="#">
+          </a>
+          <a id="francuski" href="/fr">
             <img style="width: 25px; opacity: 0.5; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
           </a>
-          <a href="#">
+          <a href="/srb">
             <img style="width: 25px; opacity: 0.5;" src="images/demo/backgrounds/srb.png">
           </a>
         </div>
@@ -86,7 +88,9 @@
         <nav id="mainav" align="center">
           <ul class="clear">
             <li>
-              <a href="#" data-translatable><%= __('homepage') %></a>
+              <a href="#" data-translatable>
+                <%= __('homepage') %>
+              </a>
             </li>
             <li>
               <a href="#">
@@ -94,13 +98,19 @@
               </a>
             </li>
             <li>
-              <a href="#"><%= __('fieldof') %></a>
+              <a href="/field">
+                <%= __('fieldof') %>
+              </a>
             </li>
             <li>
-              <a href="#"><%= __('reference') %></a>
+              <a href="#">
+                <%= __('reference') %>
+              </a>
             </li>
             <li>
-              <a href="/contact"><%= __('contact') %></a>
+              <a href="/contact">
+                <%= __('contact') %>
+              </a>
             </li>
           </ul>
         </nav>
@@ -121,7 +131,7 @@
         <img src="/images/icons/about-blue.png" class="img-1-blue fa-size hide">
         <h5 style="color: white;">About us</h5>
       </a>
-      <a class="box box2" href="index.html">
+      <a class="box box2" href="field.html">
         <img src="/images/icons/field.png" class="img-2 fa-size">
         <img src="/images/icons/field-blue.png" class="img-2-blue fa-size hide">
         <h5 style="color: white;">Field of practice</h5>
@@ -131,7 +141,7 @@
         <img src="/images/icons/reference-blue.png" class="img-3-blue fa-size hide">
         <h5 style="color: white;">Reference</h5>
       </a>
-      <a class="box box4" href="index.html">
+      <a class="box box4" href="/contact">
         <img src="/images/icons/contact.png" class="img-4 fa-size">
         <img src="/images/icons/contact-blue.png" class="img-4-blue fa-size hide">
         <h5 style="color: white;">Contact us</h5>
@@ -149,7 +159,7 @@
 
     <!-- JAVASCRIPTS -->
     <script type="text/javascript">
-      $('.locale').click(function(e) {
+      $('.locale').click(function (e) {
         e.preventDefault();
         var locale = $(e.currentTarget).data('locale');
         var date = new Date();

@@ -246,6 +246,10 @@ blockquote::before{color:rgba(255,255,255,.2);}
 .contact-info-wrapper {
 	margin-left: -30px !important;
 }
+.field-about { 
+	color: #002157;
+	margin-top: 50px;
+}
 .contact-info-2 { 
 	color: gray;
 }
@@ -353,6 +357,12 @@ table a, #comments a{background-color:inherit;}
 	color: #002157 !important;
 }
 
+li {
+	color: #D3B889; /* bullet color */
+  }
+  .span-style {
+	color: grey !important; /* text color */
+	}
 #copyright {
 	color: #D3B889;
 }
@@ -440,7 +450,7 @@ table a, #comments a{background-color:inherit;}
 @media screen and (max-width:815px){
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
-	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter, .one_eight, .seven_eight {display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 
 	#topbar{padding-top:15px; text-align:center;}
 	#topbar ul{margin:0 0 15px 0; line-height:normal;}

@@ -74,7 +74,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/field">
                 <%= __('fieldof') %>
               </a>
             </li>
@@ -114,7 +114,7 @@
                   </div>
                   <div class="three_quarter">
                     <div class="contact-info-wrapper">
-                      <h3 class="contact-info"> ADRESS </h3>
+                      <h3 class="contact-info"> <%= __('adress') %> </h3>
                       <p class="contact-info-2"> Internacionalnih brigada 24a/4
                         <br> 11000 Belgrade, Serbia </p>
                     </div>
@@ -137,7 +137,7 @@
                   </div>
                   <div class="three_quarter">
                     <div class="contact-info-wrapper">
-                      <h3 class="contact-info"> PHONE </h3>
+                      <h3 class="contact-info"> <%= __('phone') %> </h3>
                       <p class="contact-info-2"> +381 (11) 24 32 800
                         <br> +381 (0) 63 103 5584
                         <br> +381 (0) 63 184 0171
@@ -149,14 +149,14 @@
             </div>
             <div id="comments" class="one_half">
               <form action="#" method="post">
-                <div class="one_half first">
-                  <label for="name">First name
+                <div class="one_half first" data-translatable>
+                  <label for="name"><%= __('firstname') %>
                     <span>*</span>
                   </label>
                   <input type="text" name="name" id="name" value="" size="22" required>
                 </div>
                 <div class="one_half">
-                  <label for="email">Last name
+                  <label for="email"><%= __('lastname') %>
                     <span>*</span>
                   </label>
                   <input type="text" name="lastname" id="lastname" value="" size="22" required>
@@ -168,11 +168,11 @@
                   <input type="email" name="url" id="url" value="" size="22" required>
                 </div>
                 <div class="block clear">
-                  <label for="url">Telephone no.</label>
+                  <label for="url"><%= __('tele') %></label>
                   <input type="url" name="url" id="url" value="" size="22">
                 </div>
                 <div class="block clear">
-                  <label for="comment">Message
+                  <label for="comment"><%= __('message') %>
                     <span>*</span>
                   </label>
                   <textarea name="comment" id="comment" cols="25" rows="10" required></textarea>

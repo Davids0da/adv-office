@@ -34,6 +34,22 @@ app.get('/contact', function (req, res) {
 app.get('/index', function (req, res) {
   res.render(path.join(__dirname + '/public/index.ejs'));
 });
+app.get('/field', function (req, res) {
+  res.render(path.join(__dirname + '/public/field.ejs'));
+});
+
+app.get('/srb', function (req, res) {
+  res.cookie('locale', 'srb');
+  res.redirect('/')
+});
+app.get('/fr', function (req, res) {
+  res.cookie('locale', 'fr');
+  res.redirect('/')
+});
+app.get('/en', function (req, res) {
+  res.cookie('locale', 'en');
+  res.redirect('/')
+});
 
 var port = process.env.PORT || 6001
 app.listen(port, function () {
