@@ -3,6 +3,7 @@ var app = express();
 var path = require('path');
 var i18n = require("i18n");
 const cookieParser = require('cookie-parser');
+const expressHelpers = require('express-helpers');
 
 app.use(express.static('public'));
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
@@ -10,6 +11,7 @@ app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/fonts/', express.static(path.join(__dirname, '/node_modules/bootstrap/fonts')));
 
+expressHelpers(app);
 app.set('view engine', 'ejs');
 
 i18n.configure({
