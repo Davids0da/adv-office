@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<span class="span-style"><%= getLocale() %></span>">
+<html lang="<%= getLocale() %>">
 
 <head>
 
@@ -49,14 +49,17 @@
           </ul>
         </div>
         <div class="fl_right">
-          <img style="width: 25px;" src="images/demo/backgrounds/en.png">
-          <a id="francuski" href="#">
-            <img style="width: 25px; opacity: 0.5; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
-          </a>
-          <a href="#">
-            <img style="width: 25px; opacity: 0.5;" src="images/demo/backgrounds/srb.png">
-          </a>
-        </div>
+            <a href="#" style="color: #D3B889; padding-right: 7px;"> Choose language: </a>
+            <a href="/en">
+            <img style="width: 25px;" src="images/demo/backgrounds/en.png">
+            </a>
+            <a id="francuski" href="/fr">
+              <img style="width: 25px; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
+            </a>
+            <a href="/srb">
+              <img style="width: 25px;" src="images/demo/backgrounds/srb.png">
+            </a>
+          </div>
       </div>
     </div>
     <div class="wrapper row1">
@@ -64,28 +67,28 @@
         <nav id="mainav" align="center">
           <ul class="clear">
             <li>
-              <a href="/index" data-translatable>
-                <span class="span-style"><%= __('homepage') %></span>
+              <a href="/main" data-translatable>
+                <%= __('homepage') %>
+              </a>
+            </li>
+            <li>
+              <a href="/aboutus">
+                <%= __('aboutus') %>
               </a>
             </li>
             <li>
               <a href="#">
-                <span class="span-style"><%= __('aboutus') %></span>
+                <%= __('fieldof') %>
               </a>
             </li>
             <li>
-              <a href="#">
-                <span class="span-style"><%= __('fieldof') %></span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="span-style"><%= __('reference') %></span>
+              <a href="/reference">
+                <%= __('reference') %>
               </a>
             </li>
             <li>
               <a href="/contact">
-                <span class="span-style"><%= __('contact') %></span>
+                <%= __('contact') %>
               </a>
             </li>
           </ul>
@@ -116,11 +119,15 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('first') %></span>
+            <span>
+              <%= __('first') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('first1') %></span>
+              <span class="span-style">
+                <%= __('first1') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -129,26 +136,40 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('second') %></span>
+            <span>
+              <%= __('second') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('second1') %></span>
+              <span class="span-style">
+                <%= __('second1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('second2') %></span>
+              <span class="span-style">
+                <%= __('second2') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('second3') %></span>
+              <span class="span-style">
+                <%= __('second3') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('second4') %></span>
+              <span class="span-style">
+                <%= __('second4') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('second5') %></span>
+              <span class="span-style">
+                <%= __('second5') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('second6') %></span>
+              <span class="span-style">
+                <%= __('second6') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -157,14 +178,20 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('third') %></span>
+            <span>
+              <%= __('third') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('third1') %></span>
+              <span class="span-style">
+                <%= __('third1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('third2') %></span>
+              <span class="span-style">
+                <%= __('third2') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -173,32 +200,50 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('fourth') %></span>
+            <span>
+              <%= __('fourth') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('fourth2') %></span>
+              <span class="span-style">
+                <%= __('fourth2') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('fourth3') %></span>
+              <span class="span-style">
+                <%= __('fourth3') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('fourth4') %></span>
+              <span class="span-style">
+                <%= __('fourth4') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('fourth5') %></span>
+              <span class="span-style">
+                <%= __('fourth5') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('fourth6') %></span>
+              <span class="span-style">
+                <%= __('fourth6') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('fourth7') %></span>
+              <span class="span-style">
+                <%= __('fourth7') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('fourth8') %></span>
+              <span class="span-style">
+                <%= __('fourth8') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('fourth9') %></span>
+              <span class="span-style">
+                <%= __('fourth9') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -207,17 +252,25 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('fifth') %></span>
+            <span>
+              <%= __('fifth') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('fifth1') %></span>
+              <span class="span-style">
+                <%= __('fifth1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('fifth2') %></span>
+              <span class="span-style">
+                <%= __('fifth2') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('fifth3') %></span>
+              <span class="span-style">
+                <%= __('fifth3') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -226,23 +279,35 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('sixth') %></span>
+            <span>
+              <%= __('sixth') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('sixth1') %></span>
+              <span class="span-style">
+                <%= __('sixth1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('sixth2') %></span>
+              <span class="span-style">
+                <%= __('sixth2') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('sixth3') %></span>
+              <span class="span-style">
+                <%= __('sixth3') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('sixth4') %></span>
+              <span class="span-style">
+                <%= __('sixth4') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('sixth5') %></span>
+              <span class="span-style">
+                <%= __('sixth5') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -251,17 +316,25 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('seventh') %></span>
+            <span>
+              <%= __('seventh') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('seventh1') %></span>
+              <span class="span-style">
+                <%= __('seventh1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('seventh2') %></span>
+              <span class="span-style">
+                <%= __('seventh2') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('seventh3') %></span>
+              <span class="span-style">
+                <%= __('seventh3') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -270,23 +343,35 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('eight') %></span>
+            <span>
+              <%= __('eight') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('eight1') %></span>
+              <span class="span-style">
+                <%= __('eight1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('eight2') %></span>
+              <span class="span-style">
+                <%= __('eight2') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('eight3') %></span>
+              <span class="span-style">
+                <%= __('eight3') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('eight4') %></span>
+              <span class="span-style">
+                <%= __('eight4') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('eight5') %></span>
+              <span class="span-style">
+                <%= __('eight5') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -295,17 +380,26 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('nine') %></span></span>
+            <span>
+              <%= __('nine') %>
+            </span>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('nine1') %></span>
+              <span class="span-style">
+                <%= __('nine1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('nine2') %></span>
+              <span class="span-style">
+                <%= __('nine2') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('nine3') %></span>
+              <span class="span-style">
+                <%= __('nine3') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -314,14 +408,20 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('ten') %></span>
+            <span>
+              <%= __('ten') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('ten1') %></span>
+              <span class="span-style">
+                <%= __('ten1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('ten2') %></span>
+              <span class="span-style">
+                <%= __('ten2') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -330,14 +430,20 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('eleven') %></span>
+            <span>
+              <%= __('eleven') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('eleven1') %></span>
+              <span class="span-style">
+                <%= __('eleven1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('eleven2') %></span>
+              <span class="span-style">
+                <%= __('eleven2') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -346,23 +452,35 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('twelve') %></span>
+            <span>
+              <%= __('twelve') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('twelve1') %></span>
+              <span class="span-style">
+                <%= __('twelve1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('twelve2') %></span>
+              <span class="span-style">
+                <%= __('twelve2') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('twelve3') %></span>
+              <span class="span-style">
+                <%= __('twelve3') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('twelve4') %></span>
+              <span class="span-style">
+                <%= __('twelve4') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('twelve5') %></span>
+              <span class="span-style">
+                <%= __('twelve5') %>
+              </span>
             </li>
           </ul>
         </div>
@@ -371,26 +489,40 @@
         </div>
         <div class="seven_eight">
           <h3 style="color: #002157 !important" data-translatable>
-            <span><%= __('thirteen') %></span>
+            <span>
+              <%= __('thirteen') %>
+            </span>
           </h3>
           <ul>
             <li>
-              <span class="span-style"><%= __('thirteen1') %></span>
+              <span class="span-style">
+                <%= __('thirteen1') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('thirteen2') %></span>
+              <span class="span-style">
+                <%= __('thirteen2') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('thirteen3') %></span>
+              <span class="span-style">
+                <%= __('thirteen3') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('thirteen4') %></span>
+              <span class="span-style">
+                <%= __('thirteen4') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('thirteen5') %></span>
+              <span class="span-style">
+                <%= __('thirteen5') %>
+              </span>
             </li>
             <li>
-              <span class="span-style"><%= __('thirteen6') %></span>
+              <span class="span-style">
+                <%= __('thirteen6') %>
+              </span>
             </li>
           </ul>
         </div>

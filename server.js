@@ -39,18 +39,27 @@ app.get('/index', function (req, res) {
 app.get('/field', function (req, res) {
   res.render(path.join(__dirname + '/public/field.ejs'));
 });
+app.get('/main', function (req, res) {
+  res.render(path.join(__dirname + '/public/main.ejs'));
+});
+app.get('/aboutus', function (req, res) {
+  res.render(path.join(__dirname + '/public/aboutus.ejs'));
+});
+app.get('/reference', function (req, res) {
+  res.render(path.join(__dirname + '/public/reference.ejs'));
+});
 
 app.get('/srb', function (req, res) {
   res.cookie('locale', 'srb');
-  res.redirect('/')
+  res.redirect('/main')
 });
 app.get('/fr', function (req, res) {
   res.cookie('locale', 'fr');
-  res.redirect('/')
+  res.redirect('/main')
 });
 app.get('/en', function (req, res) {
   res.cookie('locale', 'en');
-  res.redirect('/')
+  res.redirect('/main')
 });
 
 var port = process.env.PORT || 6001

@@ -49,14 +49,17 @@
           </ul>
         </div>
         <div class="fl_right">
-          <img style="width: 25px;" src="images/demo/backgrounds/en.png">
-          <a id="francuski" href="#">
-            <img style="width: 25px; opacity: 0.5; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
-          </a>
-          <a href="#">
-            <img style="width: 25px; opacity: 0.5;" src="images/demo/backgrounds/srb.png">
-          </a>
-        </div>
+            <a href="#" style="color: #D3B889; padding-right: 7px;"> Choose language: </a>
+            <a href="/en">
+            <img style="width: 25px;" src="images/demo/backgrounds/en.png">
+            </a>
+            <a id="francuski" href="/fr">
+              <img style="width: 25px; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
+            </a>
+            <a href="/srb">
+              <img style="width: 25px;" src="images/demo/backgrounds/srb.png">
+            </a>
+          </div>
       </div>
     </div>
     <div class="wrapper row1">
@@ -64,12 +67,12 @@
         <nav id="mainav" align="center">
           <ul class="clear">
             <li>
-              <a href="/index" data-translatable>
+              <a href="/main" data-translatable>
                 <%= __('homepage') %>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/aboutus">
                 <%= __('aboutus') %>
               </a>
             </li>
@@ -79,7 +82,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/reference">
                 <%= __('reference') %>
               </a>
             </li>
@@ -148,37 +151,37 @@
               </ul>
             </div>
             <div id="comments" class="one_half">
-              <form action="#" method="post">
+              <form action="https://formspree.io/sodakolor@gmail.com" method="post">
                 <div class="one_half first" data-translatable>
                   <label for="name"><%= __('firstname') %>
                     <span>*</span>
                   </label>
-                  <input type="text" name="name" id="name" value="" size="22" required>
+                  <input type="text" name="Ime" id="name" value="" size="22" required>
                 </div>
                 <div class="one_half">
                   <label for="email"><%= __('lastname') %>
                     <span>*</span>
                   </label>
-                  <input type="text" name="lastname" id="lastname" value="" size="22" required>
+                  <input type="text" name="Prezime" id="lastname" value="" size="22" required>
                 </div>
                 <div class="block clear">
                   <label for="url">Email
                     <span>*</span>
                   </label>
-                  <input type="email" name="url" id="url" value="" size="22" required>
+                  <input type="email" name="Email" id="url" value="" size="22" required>
                 </div>
                 <div class="block clear">
                   <label for="url"><%= __('tele') %></label>
-                  <input type="url" name="url" id="url" value="" size="22">
+                  <input type="text" name="Telefon" id="url" value="" size="22">
                 </div>
                 <div class="block clear">
-                  <label for="comment"><%= __('message') %>
+                  <label for="Poruka"><%= __('message') %>
                     <span>*</span>
                   </label>
-                  <textarea name="comment" id="comment" cols="25" rows="10" required></textarea>
+                  <textarea name="Poruka" id="comment" cols="25" rows="10" required></textarea>
                 </div>
                 <div>
-                  <input class="fl_right" type="submit" name="submit" value="Submit &#xf1d8;">
+                  <input class="fl_right" type="submit" name="" value="Submit &#xf1d8;">
                 </div>
             </div>
           </div>

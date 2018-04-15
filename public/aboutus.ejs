@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="<%= getLocale() %>">
+
+<head>
+
+  <head>
+    <!-- Info -->
+    <title>Belgrade law office</title>
+    <meta name="author" content="David Milosavljević, sodakolor@gmail.com">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favico -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Styles -->
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="layout/styles/framework.css" rel="stylesheet" type="text/css" media="all">
+    <link href="layout/styles/fontawesome-4.6.3.min.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <body>
+    <p id="border-t"></p>
+    <div class="wrapper row0">
+      <div id="topbar" class="hoc clear">
+        <div class="fl_left">
+          <ul class="nospace">
+            <li>
+              <i style="color: #D3B889" class="fa fa-envelope-o"></i class="sm-letters"> info@lawofficebelgrade.com</li>
+            <li>
+              <i style="color: #D3B889" class="fa fa-phone"></i> +00 (381) 24 32 800</li>
+          </ul>
+        </div>
+        <div class="fl_right">
+          <a href="#" style="color: #D3B889; padding-right: 7px;"> Choose language: </a>
+          <a href="/en">
+            <img style="width: 25px;" src="images/demo/backgrounds/en.png">
+          </a>
+          <a id="francuski" href="/fr">
+            <img style="width: 25px; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
+          </a>
+          <a href="/srb">
+            <img style="width: 25px;" src="images/demo/backgrounds/srb.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+        <nav id="mainav" align="center">
+          <ul class="clear">
+            <li>
+              <a href="/main" data-translatable>
+                <%= __('homepage') %>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <%= __('aboutus') %>
+              </a>
+            </li>
+            <li>
+              <a href="/field">
+                <%= __('fieldof') %>
+              </a>
+            </li>
+            <li>
+              <a href="/reference">
+                <%= __('reference') %>
+              </a>
+            </li>
+            <li>
+              <a href="/contact">
+                <%= __('contact') %>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded overlay ftr-background" style="height: 400px;">
+      <img style="height: 100%; object-fit:cover;" src="images/demo/backgrounds/aboutus.jpg" alt="aboutus">
+    </div>
+
+    <div class="center" align="center">
+      <img style="width: 60px; margin-top: 50px; margin-bottom: 10px;" src="/images/vaga-logo.png" alt="copyright-logo">
+      <h2 style="width: 153px; margin: auto;" id="contact-title">
+        <%= __('aboutus1') %>
+      </h2>
+    </div>
+
+    <div class="wrapper container">
+      <div class="hoc clear">
+        <p class="field-about">
+          <%= __('about1') %>
+        </p>
+        <p class="field-about">
+          <%= __('about2') %>
+        </p>
+        <p class="field-about">
+          <%= __('about3') %>
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px;" class="wrapper container">
+      <div class="hoc clear" style="background-color: #DFDFDF;">
+        <div style="height: 266px;" class="one_quarter first">
+          <img src="images/demo/backgrounds/icon.png">
+        </div>
+        <div style="height: 266px;" class="three_quarter">
+          <h2 style="margin-top: 30px;" class="about-block-title">Jasmina Kuzenko-Tasković</h2>
+          <p class="about-block-padding">
+            <%= __('jasmina') %>
+          </p>
+          <p class="about-block-padding">
+            <%= __('jasmina2') %>
+          </p>
+          <p class="about-block-padding">
+            <%= __('jasmina3') %>
+          </p>
+          <div>
+            <div class="one_half about-block-contact" style="margin: 0 !important">
+              +381 (0) 63 103 55 84
+            </div>
+            <div>
+              <a class="about-block-contact" href="mailto:jasmina.taskovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> jasmina.taskovic@lawofficebelgrade.com </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 60px;" class="wrapper container">
+      <div class="hoc clear" style="background-color: #DFDFDF;">
+        <div style="height: 266px;" class="one_quarter first">
+          <img src="images/demo/backgrounds/icon.png">
+        </div>
+        <div style="height: 266px;" class="three_quarter">
+          <h2 style="margin-top: 30px;" class="about-block-title">Ivan Ugrinović</h2>
+          <p class="about-block-padding">
+            <%= __('ivan') %>
+          </p>
+          <p class="about-block-padding">
+            <%= __('ivan2') %>
+          </p>
+          <p class="about-block-padding">
+            <%= __('ivan3') %>
+          </p>
+          <div>
+            <div class="one_half about-block-contact" style="margin: 0 !important">
+              +381 (0) 63 184 01 71
+            </div>
+            <div>
+              <a class="about-block-contact" href="mailto:ivan.ugrinovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> ivan.ugrinovic@lawofficebelgrade.com </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 60px;" class="wrapper container">
+      <div class="hoc clear" style="background-color: #DFDFDF;">
+        <div style="height: 266px;" class="one_quarter first">
+          <img src="images/demo/backgrounds/icon.png">
+        </div>
+        <div style="height: 266px;" class="three_quarter">
+          <h2 style="margin-top: 30px;" class="about-block-title">Nikola Trailović</h2>
+          <p class="about-block-padding">
+            <%= __('jasmina') %>
+          </p>
+          <p class="about-block-padding">
+            <%= __('jasmina2') %>
+          </p>
+          <p class="about-block-padding">
+            <%= __('jasmina3') %>
+          </p>
+          <div>
+            <div class="one_half about-block-contact" style="margin: 0 !important">
+              +381 (0) 64 574 75 77
+            </div>
+            <div>
+              <a class="about-block-contact" href="mailto:nikola.trailovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> nikola.trailovic@lawofficebelgrade.com </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 60px;" class="wrapper container">
+        <div class="hoc clear" style="background-color: #DFDFDF;">
+          <div style="height: 266px;" class="one_quarter first">
+            <img src="images/demo/backgrounds/icon.png">
+          </div>
+          <div style="height: 266px;" class="three_quarter">
+            <h2 style="margin-top: 30px;" class="about-block-title">Aleksandar Petrović</h2>
+            <p class="about-block-padding">
+              <%= __('jasmina') %>
+            </p>
+            <p class="about-block-padding">
+              <%= __('jasmina2') %>
+            </p>
+            <p class="about-block-padding">
+              <%= __('jasmina3') %>
+            </p>
+            <div>
+              <div class="one_half about-block-contact" style="margin: 0 !important">
+                +381 (0) 60 396 99 06
+              </div>
+              <div>
+                <a class="about-block-contact" href="mailto:aleksandar.petrovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> aleksandar.petrovic@lawofficebelgrade.com </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 60px; margin-bottom: 60px;" class="wrapper container">
+          <div class="hoc clear" style="background-color: #DFDFDF;">
+            <div style="height: 266px;" class="one_quarter first">
+              <img src="images/demo/backgrounds/icon.png">
+            </div>
+            <div style="height: 266px;" class="three_quarter">
+              <h2 style="margin-top: 30px;" class="about-block-title">Tatjana Ivković</h2>
+              <p class="about-block-padding">
+                <%= __('jasmina') %>
+              </p>
+              <p class="about-block-padding">
+                <%= __('jasmina2') %>
+              </p>
+              <p class="about-block-padding">
+                <%= __('jasmina3') %>
+              </p>
+              <div>
+                <div class="one_half about-block-contact" style="margin: 0 !important">
+                  +381 (0) 62 373 887
+                </div>
+                <div>
+                  <a class="about-block-contact" href="mailto:tatjana.ivkovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> tatjana.ivkovic@lawofficebelgrade.com </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="wrapper row5">
+      <div id="copyright" class="hoc clear">
+        <p class="fl_left">
+          <img style="width: 250px;" src="/images/white-logo.png" alt="copyright-logo">
+        </p>
+        <p class="fl_right allrights">
+          <a>Law office Belgrade. All rights reserved.</a>
+        </p>
+      </div>
+    </div>
+    <!-- JAVASCRIPTS -->
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc9Eq2y9mdshCVin__2xKkKcYfj7xp_Fc&callback=initMap" async
+      defer></script>
+  </body>
+
+</html>
