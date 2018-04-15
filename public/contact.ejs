@@ -49,17 +49,17 @@
           </ul>
         </div>
         <div class="fl_right">
-            <a href="#" style="color: #D3B889; padding-right: 7px;"> Choose language: </a>
-            <a href="/en">
-            <img style="width: 25px;" src="images/demo/backgrounds/en.png">
-            </a>
-            <a id="francuski" href="/fr">
-              <img style="width: 25px; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
-            </a>
-            <a href="/srb">
-              <img style="width: 25px;" src="images/demo/backgrounds/srb.png">
-            </a>
-          </div>
+          <a href="#" style="color: #D3B889; padding-right: 7px;"> Choose language: </a>
+          <a href="/en">
+            <img id="englang" style="width: 25px;" src="images/demo/backgrounds/en.png">
+          </a>
+          <a id="francuski" href="/fr">
+            <img id="frlang" style="width: 25px; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
+          </a>
+          <a href="/srb">
+            <img id="srblang" style="width: 25px;" src="images/demo/backgrounds/srb.png">
+          </a>
+        </div>
       </div>
     </div>
     <div class="wrapper row1">
@@ -102,7 +102,7 @@
 
     <div class="center" align="center">
       <img style="width: 60px; margin-top: 50px; margin-bottom: 10px;" src="/images/vaga-logo.png" alt="copyright-logo">
-      <h2 style="width: 140px; margin: auto;" id="contact-title" >CONTACT</h2>
+      <h2 style="width: 140px; margin: auto;" id="contact-title">CONTACT</h2>
     </div>
 
     <div class="wrapper row3">
@@ -117,7 +117,9 @@
                   </div>
                   <div class="three_quarter">
                     <div class="contact-info-wrapper">
-                      <h3 class="contact-info"> <%= __('adress') %> </h3>
+                      <h3 class="contact-info">
+                        <%= __('adress') %>
+                      </h3>
                       <p class="contact-info-2"> Internacionalnih brigada 24a/4
                         <br> 11000 Belgrade, Serbia </p>
                     </div>
@@ -140,7 +142,9 @@
                   </div>
                   <div class="three_quarter">
                     <div class="contact-info-wrapper">
-                      <h3 class="contact-info"> <%= __('phone') %> </h3>
+                      <h3 class="contact-info">
+                        <%= __('phone') %>
+                      </h3>
                       <p class="contact-info-2"> +381 (11) 24 32 800
                         <br> +381 (0) 63 103 5584
                         <br> +381 (0) 63 184 0171
@@ -153,14 +157,16 @@
             <div id="comments" class="one_half">
               <form action="https://formspree.io/sodakolor@gmail.com" method="post">
                 <div class="one_half first" data-translatable>
-                  <label for="name"><%= __('firstname') %>
-                    <span>*</span>
+                  <label for="name">
+                    <%= __('firstname') %>
+                      <span>*</span>
                   </label>
                   <input type="text" name="Ime" id="name" value="" size="22" required>
                 </div>
                 <div class="one_half">
-                  <label for="email"><%= __('lastname') %>
-                    <span>*</span>
+                  <label for="email">
+                    <%= __('lastname') %>
+                      <span>*</span>
                   </label>
                   <input type="text" name="Prezime" id="lastname" value="" size="22" required>
                 </div>
@@ -171,12 +177,15 @@
                   <input type="email" name="Email" id="url" value="" size="22" required>
                 </div>
                 <div class="block clear">
-                  <label for="url"><%= __('tele') %></label>
+                  <label for="url">
+                    <%= __('tele') %>
+                  </label>
                   <input type="text" name="Telefon" id="url" value="" size="22">
                 </div>
                 <div class="block clear">
-                  <label for="Poruka"><%= __('message') %>
-                    <span>*</span>
+                  <label for="Poruka">
+                    <%= __('message') %>
+                      <span>*</span>
                   </label>
                   <textarea name="Poruka" id="comment" cols="25" rows="10" required></textarea>
                 </div>

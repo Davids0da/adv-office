@@ -51,13 +51,13 @@
         <div class="fl_right">
           <a href="#" style="color: #D3B889; padding-right: 7px;"> Choose language: </a>
           <a href="/en">
-            <img style="width: 25px;" src="images/demo/backgrounds/en.png">
+            <img id="englang" style="width: 25px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/en.png">
           </a>
           <a id="francuski" href="/fr">
-            <img style="width: 25px; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
+            <img id="frlang" style="width: 25px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/fr.png">
           </a>
           <a href="/srb">
-            <img style="width: 25px;" src="images/demo/backgrounds/srb.png">
+            <img id="srblang" style="width: 25px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/srb.png">
           </a>
         </div>
       </div>
@@ -110,10 +110,10 @@
 
     <div class="wrapper container">
       <div class="hoc clear">
-        <p class="field-about">
+        <p class="field-about justify">
           <%= __('about1') %>
         </p>
-        <p class="field-about">
+        <p class="field-about justify">
           <%= __('about2') %>
         </p>
         <p class="field-about">
@@ -123,12 +123,12 @@
     </div>
 
     <div style="margin-top: 40px;" class="wrapper container">
-      <div class="hoc clear" style="background-color: #DFDFDF;">
+      <div class="hoc clear" style="background-color: #f8f8f8;">
         <div style="height: 266px;" class="one_quarter first">
           <img src="images/demo/backgrounds/icon.png">
         </div>
         <div style="height: 266px;" class="three_quarter">
-          <h2 style="margin-top: 30px;" class="about-block-title">Jasmina Kuzenko-Tasković</h2>
+          <h2 style="margin-top: 13px;" class="about-block-title">Jasmina Kuzenko-Tasković</h2>
           <p class="about-block-padding">
             <%= __('jasmina') %>
           </p>
@@ -142,20 +142,25 @@
             <div class="one_half about-block-contact" style="margin: 0 !important">
               +381 (0) 63 103 55 84
             </div>
-            <div>
-              <a class="about-block-contact" href="mailto:jasmina.taskovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> jasmina.taskovic@lawofficebelgrade.com </a>
+            <div class="one_half">
+              <a class="about-block-contact" href="mailto:jasmina.taskovic@lawofficebelgrade.com" target="_top" class="contact-info-2">
+                jasmina.taskovic@lawofficebelgrade.com </a>
+              <a class="about-block-contact" href="mailto:advokat.taskovic@gmail.com@lawofficebelgrade.com" target="_top" class="contact-info-2">
+                advokat.taskovic@gmail.com </a>
+              <br> <span class="blue" >Skype:</span> 
+              <a class="blue" href="skype:jasmina.taskovic?call">jasmina.taskovic</a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div style="margin-top: 60px;" class="wrapper container">
-      <div class="hoc clear" style="background-color: #DFDFDF;">
+      <div class="hoc clear" style="background-color: #f8f8f8;">
         <div style="height: 266px;" class="one_quarter first">
           <img src="images/demo/backgrounds/icon.png">
         </div>
         <div style="height: 266px;" class="three_quarter">
-          <h2 style="margin-top: 30px;" class="about-block-title">Ivan Ugrinović</h2>
+          <h2 style="margin-top: 22px;" class="about-block-title">Ivan Ugrinović</h2>
           <p class="about-block-padding">
             <%= __('ivan') %>
           </p>
@@ -169,8 +174,10 @@
             <div class="one_half about-block-contact" style="margin: 0 !important">
               +381 (0) 63 184 01 71
             </div>
-            <div>
+            <div class="one_half">
               <a class="about-block-contact" href="mailto:ivan.ugrinovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> ivan.ugrinovic@lawofficebelgrade.com </a>
+              <br> <span class="blue">Skype:</span> 
+              <a class="blue" href="skype:ivanugrinovic?call">ivanugrinovic</a>
             </div>
           </div>
         </div>
@@ -178,27 +185,22 @@
     </div>
 
     <div style="margin-top: 60px;" class="wrapper container">
-      <div class="hoc clear" style="background-color: #DFDFDF;">
+      <div class="hoc clear" style="background-color: #f8f8f8;">
         <div style="height: 266px;" class="one_quarter first">
           <img src="images/demo/backgrounds/icon.png">
         </div>
         <div style="height: 266px;" class="three_quarter">
-          <h2 style="margin-top: 30px;" class="about-block-title">Nikola Trailović</h2>
+          <h2 style="margin-top: 22px;" class="about-block-title">Nikola Trailović</h2>
           <p class="about-block-padding">
-            <%= __('jasmina') %>
-          </p>
-          <p class="about-block-padding">
-            <%= __('jasmina2') %>
-          </p>
-          <p class="about-block-padding">
-            <%= __('jasmina3') %>
+            <%= __('nikola') %>
           </p>
           <div>
             <div class="one_half about-block-contact" style="margin: 0 !important">
               +381 (0) 64 574 75 77
             </div>
             <div>
-              <a class="about-block-contact" href="mailto:nikola.trailovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> nikola.trailovic@lawofficebelgrade.com </a>
+              <a class="about-block-contact" href="mailto:nikola.trailovic@lawofficebelgrade.com" target="_top" class="contact-info-2">
+                nikola.trailovic@lawofficebelgrade.com </a>
             </div>
           </div>
         </div>
@@ -206,60 +208,53 @@
     </div>
 
     <div style="margin-top: 60px;" class="wrapper container">
-        <div class="hoc clear" style="background-color: #DFDFDF;">
-          <div style="height: 266px;" class="one_quarter first">
-            <img src="images/demo/backgrounds/icon.png">
-          </div>
-          <div style="height: 266px;" class="three_quarter">
-            <h2 style="margin-top: 30px;" class="about-block-title">Aleksandar Petrović</h2>
-            <p class="about-block-padding">
-              <%= __('jasmina') %>
-            </p>
-            <p class="about-block-padding">
-              <%= __('jasmina2') %>
-            </p>
-            <p class="about-block-padding">
-              <%= __('jasmina3') %>
-            </p>
+      <div class="hoc clear" style="background-color: #f8f8f8;">
+        <div style="height: 266px;" class="one_quarter first">
+          <img src="images/demo/backgrounds/icon.png">
+        </div>
+        <div style="height: 266px;" class="three_quarter">
+          <h2 style="margin-top: 22px;" class="about-block-title">Aleksandar Petrović</h2>
+          <p class="about-block-padding">
+            <%= __('aleksandar') %>
+          </p>
+          <div>
+            <div class="one_half about-block-contact" style="margin: 0 !important">
+              +381 (0) 60 396 99 06
+            </div>
             <div>
-              <div class="one_half about-block-contact" style="margin: 0 !important">
-                +381 (0) 60 396 99 06
-              </div>
-              <div>
-                <a class="about-block-contact" href="mailto:aleksandar.petrovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> aleksandar.petrovic@lawofficebelgrade.com </a>
-              </div>
+              <a class="about-block-contact" href="mailto:aleksandar.petrovic@lawofficebelgrade.com" target="_top" class="contact-info-2">
+                aleksandar.petrovic@lawofficebelgrade.com </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div style="margin-top: 60px; margin-bottom: 60px;" class="wrapper container">
-          <div class="hoc clear" style="background-color: #DFDFDF;">
-            <div style="height: 266px;" class="one_quarter first">
-              <img src="images/demo/backgrounds/icon.png">
+    <div style="margin-top: 60px; margin-bottom: 60px;" class="wrapper container">
+      <div class="hoc clear" style="background-color: #f8f8f8;">
+        <div style="height: 266px;" class="one_quarter first">
+          <img src="images/demo/backgrounds/icon.png">
+        </div>
+        <div style="height: 266px;" class="three_quarter">
+          <h2 style="margin-top: 22px;" class="about-block-title">Tatjana Ivković</h2>
+          <p class="about-block-padding">
+            <%= __('tatjana') %>
+          </p>
+          <p class="about-block-padding">
+            <%= __('tatjana1') %>
+          </p>
+          <div>
+            <div class="one_half about-block-contact" style="margin: 0 !important">
+              +381 (0) 62 373 887
             </div>
-            <div style="height: 266px;" class="three_quarter">
-              <h2 style="margin-top: 30px;" class="about-block-title">Tatjana Ivković</h2>
-              <p class="about-block-padding">
-                <%= __('jasmina') %>
-              </p>
-              <p class="about-block-padding">
-                <%= __('jasmina2') %>
-              </p>
-              <p class="about-block-padding">
-                <%= __('jasmina3') %>
-              </p>
-              <div>
-                <div class="one_half about-block-contact" style="margin: 0 !important">
-                  +381 (0) 62 373 887
-                </div>
-                <div>
-                  <a class="about-block-contact" href="mailto:tatjana.ivkovic@lawofficebelgrade.com" target="_top" class="contact-info-2"> tatjana.ivkovic@lawofficebelgrade.com </a>
-                </div>
-              </div>
+            <div>
+              <a class="about-block-contact" href="mailto:tatjana.ivkovic@lawofficebelgrade.com" target="_top" class="contact-info-2">
+                tatjana.ivkovic@lawofficebelgrade.com </a>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
     <div class="wrapper row5">
       <div id="copyright" class="hoc clear">

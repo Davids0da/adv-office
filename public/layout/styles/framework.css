@@ -28,7 +28,8 @@ html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
 .borderedbox{border:1px solid;}
 .overlay{position:relative; z-index:1;}
 .overlay::after{display:block; position:absolute; top:0; left:0; width:100%; height:100%; content:""; z-index:-1;}
-.bgded{background-position:top center; background-repeat:no-repeat; background-size:cover;}
+.bgded{background-position:top center;}
+
 .circle{border-radius:50%; background-clip:padding-box;}
 
 .btn{display:inline-block; padding:10px 20px 12px; text-transform:uppercase; border:1px solid;}
@@ -102,7 +103,6 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 .one_half, .two_quarter{width:48.46625766871166%;}
 .two_third{width:65.6441717791411%;}
 .three_quarter{width:74.23312883435584%;}
-
 
 /* Spacing
 --------------------------------------------------------------------------------------------------------------- */

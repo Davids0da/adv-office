@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 
 i18n.configure({
   locales: ['en', 'fr', 'srb'],
-  defaultLocale: 'en',
+  defaultLocale: 'srb',
   cookie: 'locale',
   directory: __dirname + '/locales'
 });

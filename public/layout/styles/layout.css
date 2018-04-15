@@ -252,6 +252,12 @@ blockquote::before{color:rgba(255,255,255,.2);}
 .about-block-contact { 
 	color: #002157;
 }
+.justify { 
+	text-align: justify;
+}
+.displayNone {
+	display: none;
+}
 
 
 .contact-info-wrapper {
@@ -315,6 +321,10 @@ input[type="submit"] {
 	display: flex;
 	width: 100%;
 }
+.row-box-mobile { 
+	display: flex;
+	width: 100%;
+}
 /* Top Bar */
 #topbar ul li{border-color:rgba(255,255,255,.2);}
 #topbar > div:last-of-type li:first-child a{color:#66CCCC;}
@@ -353,7 +363,7 @@ input[type="submit"] {
 .pagination .current *{color:#FFFFFF; background-color:#66CCCC;}
 
 #backtotop{color:#FFFFFF; background-color:#D3B889;}
-
+#mobile-menu { display: none;}
 
 /* Tables + Comments */
 table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D3B889; border-radius: 6px;}
@@ -471,15 +481,19 @@ li {
 
 	#mainav form{margin-top:0;}
 	#pageintro article{max-width:none;}
+	#border-t { margin-top: 75px; }
 }
 
 
 @media screen and (max-width:450px){
 	#topbar ul li{margin-bottom:2px; padding-right:0; border-right:none;}
-	#border-t { margin-top: 60px }
 }
-
-
+@media screen and (max-width:470px){
+	#header { display: none;}
+	#border-t { display: none; }
+	.row-box { display: none; }
+	#mobile-menu { display: inline; }
+}
 /* Other
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:650px){
@@ -688,4 +702,8 @@ li {
 	position: absolute;
 	margin: auto;
 	margin-top: -200px;
+}
+
+@media screen and (max-width:367px){
+	#border-t { margin-top: 95px; }
 }

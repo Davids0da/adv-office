@@ -41,23 +41,26 @@
         <div class="fl_left">
           <ul class="nospace">
             <li>
-              <i style="color: #D3B889" class="fa fa-envelope-o"></i class="sm-letters"> <a  style="color: #D3B889" href="mailto:info@lawofficebelgrade.com" target="_top" class="contact-info-2"> info@lawofficebelgrade.com </a></li>
+              <i style="color: #D3B889" class="fa fa-envelope-o"></i class="sm-letters">
+              <a style="color: #D3B889" href="mailto:info@lawofficebelgrade.com" target="_top" class="contact-info-2">
+                info@lawofficebelgrade.com </a>
+            </li>
             <li>
               <i style="color: #D3B889" class="fa fa-phone"></i> +00 (381) 24 32 800</li>
           </ul>
         </div>
         <div class="fl_right">
-            <a href="#" style="color: #D3B889; padding-right: 7px;"> Choose language: </a>
-            <a href="/en">
-            <img style="width: 25px;" src="images/demo/backgrounds/en.png">
-            </a>
-            <a id="francuski" href="/fr">
-              <img style="width: 25px; margin-left: 5px;margin-right: 5px;" src="images/demo/backgrounds/fr.png">
-            </a>
-            <a href="/srb">
-              <img style="width: 25px;" src="images/demo/backgrounds/srb.png">
-            </a>
-          </div>
+          <a href="#" style="color: #D3B889; padding-right: 7px;"> Choose language: </a>
+          <a href="/en">
+            <img id="englang" style="width: 25px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/en.png">
+          </a>
+          <a id="francuski" href="/fr">
+            <img id="frlang" style="width: 25px; margin-left: 5px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/fr.png">
+          </a>
+          <a href="/srb">
+            <img id="srblang" style="width: 25px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/srb.png">
+          </a>
+        </div>
       </div>
     </div>
     <div class="wrapper row1">
@@ -71,7 +74,7 @@
             </li>
             <li>
               <a href="/aboutus">
-                  <%= __('aboutus') %>
+                <%= __('aboutus') %>
               </a>
             </li>
             <li>
@@ -103,17 +106,17 @@
 
     <!-- Big menu with icons -->
     <div class="wrapper row-box" style="cursor: pointer;">
-      <a class="box box1 first" href="index.html">
+      <a class="box box1 first" href="/aboutus">
         <img src="/images/icons/about.png" class="img-1 fa-size">
         <img src="/images/icons/about-blue.png" class="img-1-blue fa-size hide">
         <h5 style="color: white;">About us</h5>
       </a>
-      <a class="box box2" href="field.html">
+      <a class="box box2" href="/field">
         <img src="/images/icons/field.png" class="img-2 fa-size">
         <img src="/images/icons/field-blue.png" class="img-2-blue fa-size hide">
         <h5 style="color: white;">Field of practice</h5>
       </a>
-      <a class="box box3" href="index.html">
+      <a class="box box3" href="/reference">
         <img src="/images/icons/reference.png" class="img-3 fa-size">
         <img src="/images/icons/reference-blue.png" class="img-3-blue fa-size hide">
         <h5 style="color: white;">Reference</h5>
@@ -124,6 +127,38 @@
         <h5 style="color: white;">Contact us</h5>
       </a>
     </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu">
+      <div class="wrapper row-box-mobile" style="cursor: pointer;">
+        <a class="box box1 first" href="/aboutus">
+          <img src="/images/icons/about.png" class="img-1 fa-size">
+          <img src="/images/icons/about-blue.png" class="img-1-blue fa-size hide">
+          <h5 style="color: white;">About us</h5>
+        </a>
+      </div>
+      <div class="wrapper row-box-mobile" style="cursor: pointer;">
+        <a class="box box2" href="/field">
+          <img src="/images/icons/field.png" class="img-2 fa-size">
+          <img src="/images/icons/field-blue.png" class="img-2-blue fa-size hide">
+          <h5 style="color: white;">Field of practice</h5>
+        </a>
+      </div>
+      <div class="wrapper row-box-mobile" style="cursor: pointer;">
+        <a class="box box3" href="/reference">
+          <img src="/images/icons/reference.png" class="img-3 fa-size">
+          <img src="/images/icons/reference-blue.png" class="img-3-blue fa-size hide">
+          <h5 style="color: white;">Reference</h5>
+        </a>
+      </div>
+      <div class="wrapper row-box-mobile" style="cursor: pointer;">
+        <a class="box box4" href="/contact">
+          <img src="/images/icons/contact.png" class="img-4 fa-size">
+          <img src="/images/icons/contact-blue.png" class="img-4-blue fa-size hide">
+          <h5 style="color: white;">Contact us</h5>
+        </a>
+      </div>
+    </div>
+
 
     <!-- Sample for JS -->
     <a id="sample" href="#"></a>
@@ -149,6 +184,7 @@
     <script src="layout/scripts/jquery.min.js"></script>
     <script src="layout/scripts/jquery.backtotop.js"></script>
     <script src="layout/scripts/jquery.mobilemenu.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 
 </html>
