@@ -13,14 +13,19 @@ function initMap() {
     icon: image,
   });
 };
+
 var x = document.cookie;
-console.log(x);
 if (x === 'locale=fr') {
   $('#frlang').addClass('displayNone');
+  $('#fr-logo').removeClass('displayNone');
 }
 else if (x === 'locale=srb') {
   $('#srblang').addClass('displayNone');
+  $('#srb-logo').removeClass('displayNone');
 }
 else if (x === 'locale=en') {
   $('#englang').addClass('displayNone');
+  $('#en-logo').removeClass('displayNone');
 }
+
+

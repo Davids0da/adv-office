@@ -124,64 +124,66 @@
     <!-- Top Background Image Wrapper -->
     <div class="bgded overlay ftr-background" style="height: 600px; background-image:url('images/demo/backgrounds/01.png');">
       <div id="pageintro" align="center" class="hoc clear">
-        <img style="width: 500px;" src="/images/icons/en-logo.png" alt="logo">
+        <img id="en-logo" class="displayNone" style="width: 500px;" src="/images/icons/en-logo.png" alt="logo">
+        <img id="fr-logo" class="displayNone" style="width: 500px;" src="/images/icons/fr-logo.png" alt="logo">
+        <img id="srb-logo" class="displayNone" style="width: 500px;" src="/images/icons/srb-logo.png" alt="logo">
       </div>
     </div>
 
-<!-- Big menu with icons -->
-<div class="wrapper row-box" style="cursor: pointer;">
-    <a class="box box1 first" href="/aboutus">
-      <img src="/images/icons/about.png" class="img-1 fa-size">
-      <img src="/images/icons/about-blue.png" class="img-1-blue fa-size hide">
-      <h5 style="color: white;">About us</h5>
-    </a>
-    <a class="box box2" href="/field">
-      <img src="/images/icons/field.png" class="img-2 fa-size">
-      <img src="/images/icons/field-blue.png" class="img-2-blue fa-size hide">
-      <h5 style="color: white;">Field of practice</h5>
-    </a>
-    <a class="box box3" href="/reference">
-      <img src="/images/icons/reference.png" class="img-3 fa-size">
-      <img src="/images/icons/reference-blue.png" class="img-3-blue fa-size hide">
-      <h5 style="color: white;">Reference</h5>
-    </a>
-    <a class="box box4" href="/contact">
-      <img src="/images/icons/contact.png" class="img-4 fa-size">
-      <img src="/images/icons/contact-blue.png" class="img-4-blue fa-size hide">
-      <h5 style="color: white;">Contact us</h5>
-    </a>
-  </div>
-  <!-- Mobile menu -->
-  <div id="mobile-menu">
-    <div class="wrapper row-box-mobile" style="cursor: pointer;">
+   <!-- Big menu with icons -->
+   <div class="wrapper row-box" style="cursor: pointer;">
       <a class="box box1 first" href="/aboutus">
         <img src="/images/icons/about.png" class="img-1 fa-size">
         <img src="/images/icons/about-blue.png" class="img-1-blue fa-size hide">
-        <h5 style="color: white;">About us</h5>
+        <h5 style="color: white;"><%= __('aboutus') %></h5>
       </a>
-    </div>
-    <div class="wrapper row-box-mobile" style="cursor: pointer;">
       <a class="box box2" href="/field">
         <img src="/images/icons/field.png" class="img-2 fa-size">
         <img src="/images/icons/field-blue.png" class="img-2-blue fa-size hide">
-        <h5 style="color: white;">Field of practice</h5>
+        <h5 style="color: white;"><%= __('fieldof') %></h5>
       </a>
-    </div>
-    <div class="wrapper row-box-mobile" style="cursor: pointer;">
       <a class="box box3" href="/reference">
         <img src="/images/icons/reference.png" class="img-3 fa-size">
         <img src="/images/icons/reference-blue.png" class="img-3-blue fa-size hide">
-        <h5 style="color: white;">Reference</h5>
+        <h5 style="color: white;"><%= __('reference') %></h5>
       </a>
-    </div>
-    <div class="wrapper row-box-mobile" style="cursor: pointer;">
       <a class="box box4" href="/contact">
         <img src="/images/icons/contact.png" class="img-4 fa-size">
         <img src="/images/icons/contact-blue.png" class="img-4-blue fa-size hide">
-        <h5 style="color: white;">Contact us</h5>
+        <h5 style="color: white;"><%= __('contact') %></h5>
       </a>
     </div>
-  </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu">
+      <div class="wrapper row-box-mobile" style="cursor: pointer;">
+        <a class="box box1 first" href="/aboutus">
+          <img src="/images/icons/about.png" class="img-1 fa-size">
+          <img src="/images/icons/about-blue.png" class="img-1-blue fa-size hide">
+          <h5 style="color: white;"><%= __('aboutus') %></h5>
+        </a>
+      </div>
+      <div class="wrapper row-box-mobile" style="cursor: pointer;">
+        <a class="box box2" href="/field">
+          <img src="/images/icons/field.png" class="img-2 fa-size">
+          <img src="/images/icons/field-blue.png" class="img-2-blue fa-size hide">
+          <h5 style="color: white;"><%= __('fieldof') %></h5>
+        </a>
+      </div>
+      <div class="wrapper row-box-mobile" style="cursor: pointer;">
+        <a class="box box3" href="/reference">
+          <img src="/images/icons/reference.png" class="img-3 fa-size">
+          <img src="/images/icons/reference-blue.png" class="img-3-blue fa-size hide">
+          <h5 style="color: white;"><%= __('reference') %></h5>
+        </a>
+      </div>
+      <div class="wrapper row-box-mobile" style="cursor: pointer;">
+        <a class="box box4" href="/contact">
+          <img src="/images/icons/contact.png" class="img-4 fa-size">
+          <img src="/images/icons/contact-blue.png" class="img-4-blue fa-size hide">
+          <h5 style="color: white;"><%= __('contact') %></h5>
+        </a>
+      </div>
+    </div>
 
     <!-- Sample for JS -->
     <a id="sample" href="#"></a>
