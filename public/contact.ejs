@@ -31,19 +31,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Styles -->
-    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
     <link href="layout/styles/framework.css" rel="stylesheet" type="text/css" media="all">
     <link href="layout/styles/fontawesome-4.6.3.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
   </head>
 
-  <body>
+  <body id="top">
     <p id="border-t"></p>
     <div class="wrapper row0">
       <div id="topbar" class="hoc clear">
         <div class="fl_left">
           <ul class="nospace">
             <li>
-              <i style="color: #D3B889" class="fa fa-envelope-o"></i class="sm-letters"> info@lawofficebelgrade.com</li>
+              <i style="color: #D3B889" class="fa fa-envelope-o"></i class="sm-letters">
+              <a style="color: #D3B889" href="mailto:info@lawofficebelgrade.com" target="_top" class="contact-info-2">
+                info@lawofficebelgrade.com </a>
+            </li>
             <li>
               <i style="color: #D3B889" class="fa fa-phone"></i> +00 (381) 24 32 800</li>
           </ul>
@@ -54,7 +57,7 @@
             <img id="englang" style="width: 25px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/en.png">
           </a>
           <a id="francuski" href="/fr">
-            <img id="frlang" style="width: 25px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/fr.png">
+            <img id="frlang" style="width: 25px; margin-left: 5px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/fr.png">
           </a>
           <a href="/srb">
             <img id="srblang" style="width: 25px; margin-left: 2.5px;margin-right: 2.5px;" src="images/demo/backgrounds/srb.png">
@@ -62,6 +65,27 @@
         </div>
       </div>
     </div>
+
+    <div id="mySidenav" align="center" style="z-index: 1000;" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/main">
+        <%= __('homepage') %>
+      </a>
+      <a href="/aboutus">
+        <%= __('aboutus') %>
+      </a>
+      <a href="/field">
+        <%= __('fieldof') %>
+      </a>
+      <a href="/reference">
+        <%= __('reference') %>
+      </a>
+    </div>
+
+    <div style="width: 100%; margin-bottom: 20px; text-align:center;">
+      <span id="hamburger" style="display: none; font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+    </div>
+
     <div class="wrapper row1">
       <header id="header" class="hoc clear">
         <nav id="mainav" align="center">
@@ -102,7 +126,9 @@
 
     <div class="center" align="center">
       <img style="width: 60px; margin-top: 50px; margin-bottom: 10px;" src="/images/vaga-logo.png" alt="copyright-logo">
-      <h2 style="width: 140px; margin: auto;" id="contact-title">CONTACT</h2>
+      <h2 style="width: 140px; margin: auto;" id="contact-title">
+        <%= __('CONTACT') %>
+      </h2>
     </div>
 
     <div class="wrapper row3">
@@ -112,7 +138,7 @@
             <div id="footer" class="one_half first">
               <ul class="nospace linklist contact">
                 <li>
-                  <div class="one_quarter one_quater_responsive">
+                  <div class="one_quarter quater_responsive">
                     <img src="/images/icons/adress.png" class="img-1 fa-size">
                   </div>
                   <div class="three_quarter three_quarter_responsive">
@@ -126,7 +152,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="one_quarter one_quater_responsive">
+                  <div class="one_quarter quater_responsive">
                     <img src="/images/icons/mail-2.png" class="img-1 fa-size">
                   </div>
                   <div class="three_quarter three_quarter_responsive">
@@ -137,7 +163,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="one_quarter one_quater_responsive">
+                  <div class="one_quarter quater_responsive">
                     <img src="/images/icons/phone.png" class="img-1 fa-size">
                   </div>
                   <div class="three_quarter three_quarter_responsive">

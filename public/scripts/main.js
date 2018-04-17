@@ -18,14 +18,27 @@ var x = document.cookie;
 if (x === 'locale=fr') {
   $('#frlang').addClass('displayNone');
   $('#fr-logo').removeClass('displayNone');
+  $('.jasmina').css('margin-top', '3px');
+  $('#fields-title').css('width', '375px');
+  $('#about-title').css('width', '135px');
 }
 else if (x === 'locale=srb') {
   $('#srblang').addClass('displayNone');
   $('#srb-logo').removeClass('displayNone');
+  $('#fields-title').css('width', '253px');
+  $('#about-title').css('width', '121px');
 }
 else if (x === 'locale=en') {
   $('#englang').addClass('displayNone');
   $('#en-logo').removeClass('displayNone');
+  $('#fields-title').css('width', '310px');
+  $('#about-title').css('width', '153px');
 }
 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}

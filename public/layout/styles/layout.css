@@ -259,7 +259,6 @@ blockquote::before{color:rgba(255,255,255,.2);}
 	display: none;
 }
 
-
 .contact-info-wrapper {
 	margin-left: -30px !important;
 }
@@ -270,11 +269,12 @@ blockquote::before{color:rgba(255,255,255,.2);}
 .contact-info-2 { 
 	color: gray;
 }
-#contact-title { 
+#contact-title, #fields-title, #about-title { 
 	font-size: 30px !important;
 	color: #002157 !important;
 	border-bottom: 4px solid #D3B889;
 }
+
 input[type="submit"] {
     font-family: FontAwesome;
 }
@@ -485,6 +485,12 @@ li {
 	#mainav form{margin-top:0;}
 	#pageintro article{max-width:none;}
 	#border-t { margin-top: 75px; }
+	.image_responsive {
+		display: none;
+	}
+	.one_quarter_a {
+		display: none;
+	}
 }
 
 
@@ -496,11 +502,19 @@ li {
 	#border-t { display: none; }
 	.row-box { display: none; }
 	#mobile-menu { display: inline; }
+	#hamburger { display: block !important; color: #D3B889;}
+	#mySidenav { background: #D3B889;}
+	#mySidenav a { 
+		color: #002157;
+		text-transform: uppercase;
+	}
+	#mySidenav a:hover { 
+		color: white;
+	}
 }
 /* Other
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:650px){
-	.one_eight { display: none;}
 	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
 	.scrollable table{margin:0; padding:0; white-space:nowrap;}
 
@@ -510,8 +524,8 @@ li {
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
 }
-@media screen and (max-width:670px){
-	.one_quater_responsive { 
+@media screen and (max-width:815px){
+	.quater_responsive { 
 		width: 100% !important;
 		text-align: center;
 		margin-bottom: 15px !important;
@@ -537,6 +551,9 @@ li {
 	}
 	.contact-info-wrapper{
 		margin: 0 !important;
+	}
+	#hamburger { 
+		display: block;
 	}
 }
 
@@ -739,4 +756,43 @@ li {
 
 @media screen and (max-width:367px){
 	#border-t { margin-top: 95px; }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

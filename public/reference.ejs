@@ -31,9 +31,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Styles -->
-    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
     <link href="layout/styles/framework.css" rel="stylesheet" type="text/css" media="all">
     <link href="layout/styles/fontawesome-4.6.3.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
   </head>
 
   <body>
@@ -62,6 +62,27 @@
         </div>
       </div>
     </div>
+    
+    <div id="mySidenav" align="center" style="z-index: 1000;" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/main">
+        <%= __('homepage') %>
+      </a>
+      <a href="/aboutus">
+        <%= __('aboutus') %>
+      </a>
+      <a href="/field">
+        <%= __('fieldof') %>
+      </a>
+      <a href="/contact">
+        <%= __('contact') %>
+      </a>
+    </div>
+
+    <div style="width: 100%; margin-bottom: 20px; text-align:center;">
+      <span id="hamburger" style="display: none; font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+    </div>
+
     <div class="wrapper row1">
       <header id="header" class="hoc clear">
         <nav id="mainav" align="center">
@@ -108,7 +129,7 @@
       </h2>
     </div>
 
-    <div class="wrapper container">
+    <div class="wrapper">
       <div class="hoc clear">
         <p class="field-about justify">
           <%= __('reference1') %>
@@ -125,23 +146,23 @@
 
 
     <div align="center">
-      <img class="logoes" style="width: 13.2%" src="images/logoi/logoes5.jpg">
-      <img class="logoes" style="width: 13.2%" src="images/logoi/logoes7.jpg">
-      <img class="logoes" style="width: 13.2%" src="images/logoi/logoes3.jpg">
-      <img class="logoes" style="width: 13.2%" src="images/logoi/logoes2.png">
-      <img class="logoes" style="width: 13.2%" src="images/logoi/logoes6.jpg">
-      <img class="logoes" style="width: 13.2%" src="images/logoi/logoes10.gif">
-      <img class="logoes" style="width: 13.2%" src="images/logoi/logoes15.png">
+      <img class="logoes" style="width: 10.5%" src="images/logoi/logoes5.jpg">
+      <img class="logoes" style="width: 10.5%" src="images/logoi/logoes7.jpg">
+      <img class="logoes" style="width: 10.5%" src="images/logoi/logoes3.jpg">
+      <img class="logoes" style="width: 10.5%" src="images/logoi/logoes2.png">
+      <img class="logoes" style="width: 10.5%" src="images/logoi/logoes6.jpg">
+      <img class="logoes" style="width: 10.5%" src="images/logoi/logoes10.gif">
+      <img class="logoes" style="width: 10.5%" src="images/logoi/logoes15.png">
     </div>
     <div align="center" style="margin-bottom: 70px;">
-      <img class="logoes" style="width: 11.5%" src="images/logoi/logoes1.png">
-      <img class="logoes" style="width: 11.5%" src="images/logoi/logoes8.jpg">
-      <img class="logoes" style="width: 11.5%" src="images/logoi/logoes14.png">
-      <img class="logoes" style="width: 11.5%" src="images/logoi/logoes9.jpg ">
-      <img class="logoes" style="width: 11.5%" src="images/logoi/logoes11.png">
-      <img class="logoes" style="width: 11.5%" src="images/logoi/logoes13.png">
-      <img class="logoes" style="width: 11.5%" src="images/logoi/logoes12.png">
-      <img class="logoes" style="width: 11.5%" src="images/logoi/logoes4.jpg">
+      <img class="logoes" style="width: 9%" src="images/logoi/logoes1.png">
+      <img class="logoes" style="width: 9%" src="images/logoi/logoes8.jpg">
+      <img class="logoes" style="width: 9%" src="images/logoi/logoes14.png">
+      <img class="logoes" style="width: 9%" src="images/logoi/logoes9.jpg ">
+      <img class="logoes" style="width: 9%" src="images/logoi/logoes11.png">
+      <img class="logoes" style="width: 9%" src="images/logoi/logoes13.png">
+      <img class="logoes" style="width: 9%" src="images/logoi/logoes12.png">
+      <img class="logoes" style="width: 9%" src="images/logoi/logoes4.jpg">
     </div>
 
 
