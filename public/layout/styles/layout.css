@@ -491,6 +491,9 @@ li {
 	.one_quarter_a {
 		display: none;
 	}
+	#copyright { 
+		text-align: center;
+	}
 }
 
 
@@ -750,8 +753,7 @@ li {
 #logo2 { 
 	width: 350px;
 	position: absolute;
-	margin: auto;
-	margin-top: -200px;
+	margin-top: -20vh;
 }
 
 @media screen and (max-width:367px){
