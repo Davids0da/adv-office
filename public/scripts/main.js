@@ -38,6 +38,22 @@ else if (x === ' locale=en') {
   $('#about-title').css('width', '153px');
 }
 
+$( document ).ready(function() {
+  if (x === ' locale=fr') {
+    $('#frlang').addClass('displayNone');
+    $('#fr-logo').removeClass('displayNone');
+    $('.jasmina').css('margin-top', '3px');
+  }
+  else if (x === ' locale=srb') {
+    $('#srblang').addClass('displayNone');
+    $('#srb-logo').removeClass('displayNone');
+  }
+  else if (x === ' locale=en') {
+    $('#englang').addClass('displayNone');
+    $('#en-logo').removeClass('displayNone');
+  }
+});
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
