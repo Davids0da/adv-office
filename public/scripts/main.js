@@ -14,45 +14,34 @@ function initMap() {
   });
 };
 
-var y = document.cookie;
-var z = y.split(';');
-var x = z[2];
 
-if (x === ' locale=fr') {
+function getCookie(name) {
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+}
+
+var x = getCookie('locale');
+
+if ( x === 'fr') {
   $('#frlang').addClass('displayNone');
   $('#fr-logo').removeClass('displayNone');
   $('.jasmina').css('margin-top', '3px');
   $('#fields-title').css('width', '375px');
   $('#about-title').css('width', '135px');
 }
-else if (x === ' locale=srb') {
+else if (x === 'srb') {
   $('#srblang').addClass('displayNone');
   $('#srb-logo').removeClass('displayNone');
   $('#fields-title').css('width', '253px');
   $('#about-title').css('width', '121px');
 }
-else if (x === ' locale=en') {
+else if (x === 'en') {
   $('#englang').addClass('displayNone');
   $('#en-logo').removeClass('displayNone');
   $('#fields-title').css('width', '310px');
   $('#about-title').css('width', '153px');
 }
-
-$( document ).ready(function() {
-  if (x === ' locale=fr') {
-    $('#frlang').addClass('displayNone');
-    $('#fr-logo').removeClass('displayNone');
-    $('.jasmina').css('margin-top', '3px');
-  }
-  else if (x === ' locale=srb') {
-    $('#srblang').addClass('displayNone');
-    $('#srb-logo').removeClass('displayNone');
-  }
-  else if (x === ' locale=en') {
-    $('#englang').addClass('displayNone');
-    $('#en-logo').removeClass('displayNone');
-  }
-});
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
