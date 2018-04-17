@@ -1,4 +1,8 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+@font-face {
+    font-family: GothamBook;
+    src:url('/fonts/Gotham-Book.woff') format('woff')
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: GothamBook;}
 body, html {
     height: 100%;
     color: #777;

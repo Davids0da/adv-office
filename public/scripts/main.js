@@ -27,19 +27,19 @@ if ( x === 'fr') {
   $('#frlang').addClass('displayNone');
   $('#fr-logo').removeClass('displayNone');
   $('.jasmina').css('margin-top', '3px');
-  $('#fields-title').css('width', '375px');
+  $('#fields-title').css('width', '364px');
   $('#about-title').css('width', '135px');
 }
 else if (x === 'srb') {
   $('#srblang').addClass('displayNone');
   $('#srb-logo').removeClass('displayNone');
   $('#fields-title').css('width', '253px');
-  $('#about-title').css('width', '121px');
+  $('#about-title').css('width', '128px');
 }
 else if (x === 'en') {
   $('#englang').addClass('displayNone');
   $('#en-logo').removeClass('displayNone');
-  $('#fields-title').css('width', '310px');
+  $('#fields-title').css('width', '302px');
   $('#about-title').css('width', '153px');
 }
 
