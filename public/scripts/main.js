@@ -29,6 +29,8 @@ if ( x === 'fr') {
   $('.jasmina').css('margin-top', '3px');
   $('#fields-title').css('width', '364px');
   $('#about-title').css('width', '135px');
+  $('#wh-srb').addClass('displayNone');
+  $('#wh-eng').addClass('displayNone');
 }
 else if (x === 'srb') {
   $('#srblang').addClass('displayNone');
@@ -36,6 +38,8 @@ else if (x === 'srb') {
   $('#fields-title').css('width', '253px');
   $('#about-title').css('width', '128px');
   $('#tatjana3').addClass('displayNone');
+  $('#wh-fr').addClass('displayNone');
+  $('#wh-eng').addClass('displayNone');
 }
 else if (x === 'en') {
   $('#englang').addClass('displayNone');
@@ -46,6 +50,8 @@ else if (x === 'en') {
   $('#tatjana3').addClass('displayNone');
   $('#aleksandar1').addClass('displayNone');
   $('#nikola1').addClass('displayNone');
+  $('#wh-fr').addClass('displayNone');
+  $('#wh-srb').addClass('displayNone');
 }
 
 function openNav() {
@@ -55,3 +61,4 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
