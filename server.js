@@ -23,12 +23,9 @@ i18n.configure({
 
 app.use(cookieParser());
 
-app.use((req, res, next) => {
-  i18n.init(req, res, next);
-});
+app.use(i18n.init);
 
 app.get('/', function (req, res) {
-  res.cookie('locale', 'srb');
   res.render(path.join(__dirname + '/public/index.ejs'));
 });
 app.get('/contact', function (req, res) {
