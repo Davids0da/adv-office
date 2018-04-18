@@ -28,6 +28,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', function (req, res) {
+  res.cookie('locale', 'srb');
   res.render(path.join(__dirname + '/public/index.ejs'));
 });
 app.get('/contact', function (req, res) {
