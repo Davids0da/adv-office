@@ -411,3 +411,12 @@ section {
     width: 24% !important;
   }
 }
+
+.about-background { 
+  background-color: #f8f8f8;
+}
+@media only screen and (max-width: 600px) {
+  .about-background { 
+      background-color: white !important;
+  }
+}

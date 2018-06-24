@@ -935,7 +935,6 @@ li {
 }
 .ftr-background {
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
 }
 /* ------------------------------------------------------------------------------------------------------------ */

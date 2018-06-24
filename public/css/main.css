@@ -9,6 +9,9 @@ body, html {
     display: none;
     padding: 0;
 }
+.about-background { 
+    background-color: #f8f8f8;
+}
 @media only screen and (max-width: 600px) {
     #coming-soon-img {
         display: none;
@@ -17,6 +20,9 @@ body, html {
         display: inline;
         width: 100%;
         height: 100%;
+    }
+    .about-background { 
+        background-color: white !important;
     }
 }
 #coming-soon-img {

@@ -48,7 +48,7 @@ else if (x === 'srb') {
   $('#nikola-1').css('margin-top', '55px');
   $('#aleksandar-1').css('margin-top', '55px');
   $('#tatjana-1').css('margin-top', '40px');
-  $('#ivan-1').css('margin-top', '28px');
+  $('#ivan-1').css('margin-top', '15px');
 }
 else if (x === 'en') {
   $('#englang').addClass('displayNone');
@@ -65,6 +65,7 @@ else if (x === 'en') {
   $('#nikola-1').css('margin-top', '75px');
   $('#aleksandar-1').css('margin-top', '75px');
   $('#tatjana-1').css('margin-top', '60px');
+  $('#ivan-1').css('margin-top', '11px');
 }
 
 function openNav() {
